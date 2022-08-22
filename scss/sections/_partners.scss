@@ -1,0 +1,10 @@
+@use "../custom" as *;
+
+.partners {
+  img {
+    &:hover {
+      cursor: pointer;
+      filter: grayscale(0.8);
+    }
+  }
+}

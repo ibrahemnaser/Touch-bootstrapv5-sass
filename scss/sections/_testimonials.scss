@@ -1,0 +1,78 @@
+// import custom variables
+@use "../custom" as *;
+// import mixins
+@use "../components/mixins" as *;
+
+.testimonials {
+  @include gradient;
+  hr {
+    width: 100px;
+    height: 3px;
+    background-color: #ddd;
+  }
+  .carousel-sec {
+    .testimonials-card {
+      p {
+        background-color: rgba($white, 0.8);
+        padding: 20px;
+        padding-bottom: 80px;
+        text-align: center;
+        border-radius: 5px;
+        i {
+          font-size: 1.8rem;
+          color: rgba($primary, 0.8);
+        }
+      }
+    }
+    .user-box {
+      position: relative;
+      top: -80px;
+    }
+    .testimonials-pic {
+      width: fit-content;
+      margin: auto;
+      i {
+        color: rgba($primary, 0.8);
+      }
+      .img-box {
+        width: 100px;
+        img {
+          border: 5px solid;
+          border-radius: 50%;
+          border-color: rgba($primary, 0.8);
+        }
+      }
+    }
+    .testimonials-name {
+      width: fit-content;
+      margin: auto;
+      text-align: center;
+
+      p,
+      h3 {
+        margin: 0;
+      }
+    }
+    .btn-box {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      position: relative;
+      top: -20px;
+
+      button {
+        background-color: transparent;
+        border: 1px solid $white;
+        padding: 5px 20px;
+        color: $white;
+        border-radius: 5px;
+        transition: all 0.3s;
+
+        &:hover {
+          color: $black;
+          background-color: $white;
+        }
+      }
+    }
+  }
+}

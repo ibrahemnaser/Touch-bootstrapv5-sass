@@ -1,0 +1,31 @@
+// import custom variables
+@use "../custom" as *;
+// import mixins
+@use "../components/mixins" as *;
+
+.get-started {
+  background-color: $gray-200;
+  .gradient {
+    @include gradient;
+  }
+  .features {
+    ul {
+      position: relative;
+      li {
+        i {
+          margin-right: 5px;
+          font-weight: bold;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+  .form-sec {
+    h3 {
+      @include gradient;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

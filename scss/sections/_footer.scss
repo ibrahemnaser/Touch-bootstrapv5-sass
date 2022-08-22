@@ -1,0 +1,36 @@
+// import custom variables
+@use "../custom" as *;
+// import mixins
+@use "../components/mixins" as *;
+
+footer {
+  background-color: $footer;
+  ul.contact-footer {
+    li {
+      span {
+        color: $gray-300;
+      }
+    }
+  }
+  .social-footer {
+    background-color: rgba($gray-600, 0.4);
+    i {
+      cursor: pointer;
+      font-size: 24px;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+  .bottom-footer {
+    h3 {
+      white-space: nowrap;
+    }
+    .company-name {
+      flex: 1 1 auto;
+    }
+  }
+  .copyrights-footer {
+    background-color: $black;
+  }
+}

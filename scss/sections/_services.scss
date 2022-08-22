@@ -1,0 +1,37 @@
+// import custom variables
+@use "../custom" as *;
+// import mixins
+@use "../components/mixins" as *;
+
+.services {
+  h2 {
+    font-size: 40px;
+    @include media-breakpoint-up(sm) {
+      font-size: 50px;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 60px;
+    }
+  }
+  .services-context {
+    @include media-breakpoint-up(md) {
+      margin-top: 100px;
+    }
+    h3 {
+      @include gradient;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .content {
+      > i {
+        color: $primary;
+      }
+    }
+
+    button {
+      width: fit-content;
+      border-color: $primary;
+    }
+  }
+}

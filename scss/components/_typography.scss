@@ -1,0 +1,57 @@
+@use "../custom" as *;
+
+.display-2 {
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+
+  font-family: "Poppins", sans-serif;
+
+  &--intro {
+    display: inline-block;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+  }
+
+  &--description {
+    font-size: 1.4rem;
+    font-weight: 300;
+    display: block;
+    margin-top: 1.2rem;
+    text-transform: none;
+  }
+}
+
+// global styles for underline heading
+
+.sec-title {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto 1.5rem;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $primary;
+  }
+  &::before {
+    width: 150px;
+    height: 2px;
+    bottom: -10px;
+  }
+  &::after {
+    width: 20px;
+    height: 5px;
+    bottom: -15px;
+  }
+}
+
+// gray border right
+.border-right {
+  @include media-breakpoint-up(md) {
+    border-bottom: 0;
+    border-right: 2px solid $gray-400;
+  }
+  border-bottom: 2px solid $gray-400;
+}
