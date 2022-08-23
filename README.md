@@ -5,11 +5,11 @@ This is a bootstrap-v5 business template customized with sass.
 https://ibrahemnaser.github.io/Touch-bootstrapv5-sass/
 
 ## Tech:
-1- Semantic HTML5
-2- CSS3
-3- Bootstrap v5
-4- Scss
-5- Javascript
+1-Semantic HTML5
+2-CSS3
+3-Bootstrap v5
+4-Scss
+5-Javascript
 
 ## Features:
 1- Responsive Layout
